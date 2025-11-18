@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+
+body {
+
+}
+
+/* Small phones */
+@media (max-width: 480px){}
+
+/* Phones */
+@media (min-width: 480px){}
+
+/* Tablets */
+@media (min-width: 768px){}
+
+/* Small laptops */
+@media (min-width: 1024px){}
+
+/* Desktops */
+@media (min-width: 1280px){}
+
+/* Large screens */
+@media (min-width: 1536px){}
