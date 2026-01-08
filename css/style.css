@@ -5,6 +5,39 @@
   font-family: Roboto, Arial, Helvetica, sans-serif;
 }
 
+.canvas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.stack {
+  position: relative;
+  width: 228px;
+  height: 162px;
+}
+
+/* Only the folder should stretch to the stack bounds */
+.folder {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+
+/* Background keeps its own size and is centered */
+.bg {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -60%);
+  z-index: 0;
+
+  /* Ensure its rendered size matches its attributes */
+  width: 212px;
+  height: 125px;
+}
+
+
 
 
 /* Small phones */
