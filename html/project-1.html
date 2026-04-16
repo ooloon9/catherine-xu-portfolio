@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Studio Bloom — Your Name</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+
+  
+  <link rel="stylesheet" href="../css/project-style.css">
+</head>
+<body>
+
+  <nav>
+    <a href="index.html" class="nav-logo">Your Name</a>
+    <a href="index.html#work" class="nav-back">← Back to work</a>
+  </nav>
+
+  <div class="project-hero reveal">
+    <span class="project-eyebrow">Branding · 2024</span>
+    <h1>Studio Bloom</h1>
+    <p class="project-hero-desc">A full visual identity for a boutique floral design studio — crafted to feel as natural and considered as the arrangements they create.</p>
+    <div class="project-meta">
+      <div class="meta-item">
+        <p class="meta-label">Role</p>
+        <p class="meta-value">Brand Designer</p>
+      </div>
+      <div class="meta-item">
+        <p class="meta-label">Timeline</p>
+        <p class="meta-value">6 Weeks</p>
+      </div>
+      <div class="meta-item">
+        <p class="meta-label">Deliverables</p>
+        <p class="meta-value">Logo, Guidelines, Collateral</p>
+      </div>
+      <div class="meta-item">
+        <p class="meta-label">Year</p>
+        <p class="meta-value">2024</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="project-cover reveal">
+    <div class="cover-placeholder" style="background: #f0eeff;">🎨</div>
+  </div>
+
+  <div class="project-content">
+
+    <div class="content-section reveal">
+      <p class="content-label">Overview</p>
+      <h2>A brand as organic as the work itself.</h2>
+      <p>Studio Bloom came to me with a clear vision but no visual language to match it. They needed a brand identity that felt refined yet alive — something that conveyed craftsmanship and nature without leaning into cliché florals or overly feminine tropes.</p>
+      <p>The result is a restrained system built on a warm off-white palette, a custom logotype with organic letterform details, and a set of hand-drawn botanical marks used as flexible supporting elements across collateral.</p>
+    </div>
+
+    <div class="content-section reveal">
+      <p class="content-label">Process</p>
+      <h2>How we got there.</h2>
+      <div class="process-steps">
+        <div class="process-step">
+          <span class="step-num">01</span>
+          <div>
+            <p class="step-title">Discovery & Brand Audit</p>
+            <p class="step-desc">Three sessions with the founder to understand her vision, clientele, and competitive landscape. We reviewed reference imagery together to align on aesthetic direction before any design work began.</p>
+          </div>
+        </div>
+        <div class="process-step">
+          <span class="step-num">02</span>
+          <div>
+            <p class="step-title">Concept Development</p>
+            <p class="step-desc">I explored two distinct directions — one rooted in minimal Swiss typography, the other in softer editorial aesthetics. The client chose a hybrid approach, retaining the clean structure with subtle organic warmth.</p>
+          </div>
+        </div>
+        <div class="process-step">
+          <span class="step-num">03</span>
+          <div>
+            <p class="step-title">Logo & Type System</p>
+            <p class="step-desc">The wordmark was hand-drawn then digitised, with subtle ink-trap details in the letterforms. Paired with a secondary serif for body copy and a light sans-serif for captions and UI contexts.</p>
+          </div>
+        </div>
+        <div class="process-step">
+          <span class="step-num">04</span>
+          <div>
+            <p class="step-title">Collateral & Guidelines</p>
+            <p class="step-desc">Applied the system to business cards, packaging tissue, care cards, and a photographer brief. Delivered a 32-page brand guidelines document covering all use cases.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="content-section reveal">
+      <p class="content-label">Outcomes</p>
+      <h2>The impact.</h2>
+      <p>Within three months of launch, Studio Bloom reported a significant uplift in inquiry quality — attracting clients aligned with their premium positioning. The brand has since been featured in two regional lifestyle publications.</p>
+      <div class="outcome-grid">
+        <div class="outcome-item">
+          <p class="outcome-num">3×</p>
+          <p class="outcome-label">Increase in high-value inquiries</p>
+        </div>
+        <div class="outcome-item">
+          <p class="outcome-num">2</p>
+          <p class="outcome-label">Press features post-launch</p>
+        </div>
+        <div class="outcome-item">
+          <p class="outcome-num">32</p>
+          <p class="outcome-label">Page brand guidelines delivered</p>
+        </div>
+        <div class="outcome-item">
+          <p class="outcome-num">6wk</p>
+          <p class="outcome-label">Delivered on schedule</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <a href="pulse-app.html" class="next-project">
+    <div>
+      <p class="next-label">Next project</p>
+      <p class="next-title">Pulse App →</p>
+    </div>
+    <span class="next-arrow">↗</span>
+  </a>
+
+  <footer>
+    <span>© 2026 Your Name. All rights reserved.</span>
+    <span>Designed with care.</span>
+  </footer>
+
+  <script>
+    const reveals = document.querySelectorAll('.reveal');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry, i) => {
+        if (entry.isIntersecting) {
+          setTimeout(() => entry.target.classList.add('visible'), i * 80);
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.08 });
+    reveals.forEach(el => observer.observe(el));
+  </script>
+
+</body>
+</html>
