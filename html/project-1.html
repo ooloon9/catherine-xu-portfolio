@@ -116,31 +116,7 @@
 
   </div>
 
-  <a href="pulse-app.html" class="next-project">
-    <div>
-      <p class="next-label">Next project</p>
-      <p class="next-title">Pulse App →</p>
-    </div>
-    <span class="next-arrow">↗</span>
-  </a>
-
-  <footer>
-    <span>© 2026 Your Name. All rights reserved.</span>
-    <span>Designed with care.</span>
-  </footer>
-
-  <script>
-    const reveals = document.querySelectorAll('.reveal');
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry, i) => {
-        if (entry.isIntersecting) {
-          setTimeout(() => entry.target.classList.add('visible'), i * 80);
-          observer.unobserve(entry.target);
-        }
-      });
-    }, { threshold: 0.08 });
-    reveals.forEach(el => observer.observe(el));
-  </script>
+  <script src="../javascript/project.js"></script>
 
 </body>
 </html>
