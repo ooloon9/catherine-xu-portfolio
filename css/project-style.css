@@ -1,0 +1,318 @@
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+:root {
+  --bg: #f8f6f1;
+  --surface: #ffffff;
+  --text: #1a1a18;
+  --muted: #6b6b66;
+  --faint: #c8c6be;
+  --serif: 'DM Serif Display', Georgia, serif;
+  --sans: 'DM Sans', sans-serif;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--sans);
+  font-weight: 400;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ── NAV ── */
+nav {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.25rem 3rem;
+  background: rgba(248, 246, 241, 0.88);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--faint);
+}
+
+.nav-logo {
+  font-family: var(--serif);
+  font-size: 1.2rem;
+  color: var(--text);
+  text-decoration: none;
+}
+
+.nav-back {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.85rem;
+  letter-spacing: 0.05em;
+  color: var(--muted);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.nav-back:hover { color: var(--text); }
+
+/* ── HERO ── */
+.project-hero {
+  padding: 10rem 3rem 5rem;
+  max-width: 900px;
+  margin: 0 auto;
+  border-bottom: 1px solid var(--faint);
+}
+
+.project-eyebrow {
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 1.25rem;
+  display: block;
+}
+
+.project-hero h1 {
+  font-family: var(--serif);
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 400;
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
+}
+
+.project-hero-desc {
+  font-size: 1.05rem;
+  color: var(--muted);
+  max-width: 560px;
+  line-height: 1.85;
+  margin-bottom: 3rem;
+}
+
+.project-meta {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0;
+  border-top: 1px solid var(--faint);
+  border-left: 1px solid var(--faint);
+}
+
+.meta-item {
+  padding: 1.25rem 1.5rem;
+  border-right: 1px solid var(--faint);
+  border-bottom: 1px solid var(--faint);
+}
+
+.meta-label {
+  font-size: 0.68rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 0.4rem;
+}
+
+.meta-value {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+/* ── COVER IMAGE ── */
+.project-cover {
+  max-width: 900px;
+  margin: 4rem auto;
+  padding: 0 3rem;
+}
+
+.cover-placeholder {
+  width: 100%;
+  aspect-ratio: 16/9;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 5rem;
+}
+
+/* ── CONTENT ── */
+.project-content {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 0 3rem 6rem;
+}
+
+.content-section {
+  margin-bottom: 4rem;
+}
+
+.content-label {
+  font-size: 0.68rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.content-label::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: var(--faint);
+}
+
+.content-section h2 {
+  font-family: var(--serif);
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.content-section p {
+  font-size: 1rem;
+  color: var(--muted);
+  line-height: 1.85;
+  margin-bottom: 1rem;
+}
+
+/* ── PROCESS STEPS ── */
+.process-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  margin-top: 2rem;
+}
+
+.process-step {
+  display: grid;
+  grid-template-columns: 48px 1fr;
+  gap: 1.5rem;
+  padding: 1.5rem 0;
+  border-bottom: 1px solid var(--faint);
+  align-items: start;
+}
+
+.process-step:first-child { border-top: 1px solid var(--faint); }
+
+.step-num {
+  font-family: var(--serif);
+  font-size: 1.4rem;
+  color: var(--faint);
+  line-height: 1;
+  padding-top: 3px;
+}
+
+.step-title {
+  font-size: 0.95rem;
+  font-weight: 500;
+  margin-bottom: 0.4rem;
+}
+
+.step-desc {
+  font-size: 0.9rem;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+/* ── OUTCOME GRID ── */
+.outcome-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1px;
+  background: var(--faint);
+  border: 1px solid var(--faint);
+  border-radius: 12px;
+  overflow: hidden;
+  margin-top: 1.5rem;
+}
+
+.outcome-item {
+  background: var(--bg);
+  padding: 1.25rem 1.5rem;
+}
+
+.outcome-num {
+  font-family: var(--serif);
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: 0.25rem;
+}
+
+.outcome-label {
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+/* ── NEXT PROJECT ── */
+.next-project {
+  border-top: 1px solid var(--faint);
+  padding: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+  transition: background 0.2s;
+}
+
+.next-project:hover { background: var(--surface); }
+
+.next-label {
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 0.4rem;
+}
+
+.next-title {
+  font-family: var(--serif);
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.next-arrow {
+  font-size: 1.5rem;
+  color: var(--faint);
+  transition: transform 0.2s, color 0.2s;
+}
+
+.next-project:hover .next-arrow {
+  transform: translate(4px, -4px);
+  color: var(--muted);
+}
+
+/* ── FOOTER ── */
+footer {
+  border-top: 1px solid var(--faint);
+  padding: 2rem 3rem;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+
+/* ── REVEAL ── */
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ── RESPONSIVE ── */
+@media (max-width: 768px) {
+  nav { padding: 1rem 1.5rem; }
+  .project-hero { padding: 8rem 1.5rem 3rem; }
+  .project-meta { grid-template-columns: 1fr 1fr; }
+  .project-cover { padding: 0 1.5rem; margin: 2rem auto; }
+  .project-content { padding: 0 1.5rem 4rem; }
+  .outcome-grid { grid-template-columns: 1fr; }
+  .next-project { padding: 2rem 1.5rem; }
+  footer { flex-direction: column; gap: 0.5rem; padding: 1.5rem; }
+}
