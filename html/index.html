@@ -96,8 +96,8 @@
             <div class="project-thumb thumb-purple">🎨</div>
           </div>
           <div class="project-info">
-            <p class="project-tag">Branding · 2024</p>
-            <h3 class="project-name">Studio Bloom</h3>
+            <p class="project-tag">Advertising · 2026</p>
+            <h3 class="project-name">Huishang Bank 20th Anniversary Campaign</h3>
             <p class="project-desc">Full visual identity for a floral design studio — including logo, color system, typography, business collateral, and brand guidelines.</p>
           </div>
           <div class="project-arrow">↗</div>
@@ -170,31 +170,8 @@
     <span>designed with care (ft. claude ai)</span>
   </footer>
 
-  <script>
-    // Scroll reveal
-    const reveals = document.querySelectorAll('.reveal');
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry, i) => {
-        if (entry.isIntersecting) {
-          setTimeout(() => entry.target.classList.add('visible'), i * 80);
-          observer.unobserve(entry.target);
-        }
-      });
-    }, { threshold: 0.1 });
-    reveals.forEach(el => observer.observe(el));
+  <script src="../javascript/main.js"></script>
 
-    // Trigger hero reveal immediately
-    document.querySelectorAll('.hero .reveal').forEach(el => el.classList.add('visible'));
-
-    // Form submit handler
-    function handleSubmit(e) {
-      e.preventDefault();
-      const btn = e.target.querySelector('.submit-btn');
-      btn.textContent = 'Message sent ✓';
-      btn.style.background = '#4a7c59';
-      btn.disabled = true;
-    }
-  </script>
 
 </body>
 </html>
