@@ -23,8 +23,14 @@ function handleSubmit(e) {
 }
 
 // Custom cursor
+// Custom cursor
 const cursor = document.createElement('div');
 cursor.classList.add('custom-cursor');
+
+const cursorLabel = document.createElement('span');
+cursorLabel.classList.add('cursor-label');
+cursor.appendChild(cursorLabel);
+
 document.body.appendChild(cursor);
 
 document.addEventListener('mousemove', (e) => {
@@ -32,7 +38,23 @@ document.addEventListener('mousemove', (e) => {
   cursor.style.top = e.clientY + 'px';
 });
 
+document.querySelectorAll('[data-cursor]').forEach(el => {
+  el.addEventListener('mouseenter', () => {
+    const message = el.getAttribute('data-cursor');
+    cursorLabel.textContent = message;
+    cursor.classList.add('has-message');
+  });
+
+  el.addEventListener('mouseleave', () => {
+    cursor.classList.remove('has-message');
+    cursorLabel.textContent = '';
+  });
+});
+
+// Keep existing hovered scale effect for elements without a message
 document.querySelectorAll('a, button').forEach(el => {
-  el.addEventListener('mouseenter', () => cursor.classList.add('hovered'));
-  el.addEventListener('mouseleave', () => cursor.classList.remove('hovered'));
+  if (!el.hasAttribute('data-cursor')) {
+    el.addEventListener('mouseenter', () => cursor.classList.add('hovered'));
+    el.addEventListener('mouseleave', () => cursor.classList.remove('hovered'));
+  }
 });
