@@ -8,7 +8,6 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-
   <!-- FONTS -->
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
@@ -79,49 +78,79 @@
     </div>
   </div>
 
-  <!-- WORK -->
+  <!-- SELECTED WORK -->
   <div id="work">
     <div class="section">
-      <p class="section-tag reveal">Selected work</p>
-      <h2 class="section-title reveal"> <em style="font-family: var(--serif); font-style: italic; color: var(--accent);">recent projects</em> i've worked on</h2>
-      <div class="projects-list">
- 
-        <a href="project-1.html" class="project-item reveal " data-cursor="view project">
-          <div class="project-thumb-wrap">
-            <div class="project-thumb thumb-purple">🎨</div>
+      <p class="section-tag reveal">selected work</p>
+      <h2 class="section-title reveal">projects i'm<br><em style="font-family: var(--serif); font-style: italic; color: var(--accent);">proud of</em></h2>
+
+      <div class="projects-grid reveal">
+
+        <!-- Card 1 — replace href, img src, tag, name, desc, year -->
+        <a class="proj-card" href="#">
+          <div class="proj-thumb">
+            <!-- To use your own image: replace the div below with <img src="../images/your-image.jpg" alt="Project name" /> -->
+            <div class="proj-thumb-placeholder pt-1"></div>
           </div>
-          <div class="project-info">
-            <p class="project-tag">Advertising · 2026</p>
-            <h3 class="project-name">Huishang Bank 20th Anniversary Campaign</h3>
-            <p class="project-desc">Full visual identity for a floral design studio — including logo, color system, typography, business collateral, and brand guidelines.</p>
+          <div class="proj-body">
+            <span class="proj-tag">Brand Identity</span>
+            <p class="proj-name">Project title here</p>
+            <p class="proj-desc">Short description of the project — what it is, who it's for, and what makes it interesting.</p>
+            <div class="proj-footer">
+              <span class="proj-year">2025</span>
+              <span class="proj-arrow">↗</span>
+            </div>
           </div>
-          <div class="project-arrow">↗</div>
         </a>
- 
-        <a href="project-2.html" class="project-item reveal" data-cursor="view project">
-          <div class="project-thumb-wrap">
-            <div class="project-thumb thumb-teal">✦</div>
+
+        <!-- Card 2 -->
+        <a class="proj-card" href="#">
+          <div class="proj-thumb">
+            <div class="proj-thumb-placeholder pt-2"></div>
           </div>
-          <div class="project-info">
-            <p class="project-tag">Advertising · 2025</p>
-            <h3 class="project-name">Hefei Firefighting Awareness Campaign</h3>
-            <p class="project-desc">End-to-end mobile app design for a wellness tracking platform — user research, wireframes, hi-fi mockups, and interactive prototype.</p>
+          <div class="proj-body">
+            <span class="proj-tag">Web Design</span>
+            <p class="proj-name">Project title here</p>
+            <p class="proj-desc">Short description of the project — what it is, who it's for, and what makes it interesting.</p>
+            <div class="proj-footer">
+              <span class="proj-year">2025</span>
+              <span class="proj-arrow">↗</span>
+            </div>
           </div>
-          <div class="project-arrow">↗</div>
         </a>
- 
-        <a href="project-3.html" class="project-item reveal" data-cursor="view project">
-          <div class="project-thumb-wrap">
-            <div class="project-thumb thumb-peach">◈</div>
+
+        <!-- Card 3 -->
+        <a class="proj-card" href="#">
+          <div class="proj-thumb">
+            <div class="proj-thumb-placeholder pt-3"></div>
           </div>
-          <div class="project-info">
-            <p class="project-tag">UI/UX · 2025</p>
-            <h3 class="project-name">The Hive Risk Orientation Concept</h3>
-            <p class="project-desc">Layout and typography design for a quarterly print publication covering architecture and design culture. Six issues over two years.</p>
+          <div class="proj-body">
+            <span class="proj-tag">Product Design</span>
+            <p class="proj-name">Project title here</p>
+            <p class="proj-desc">Short description of the project — what it is, who it's for, and what makes it interesting.</p>
+            <div class="proj-footer">
+              <span class="proj-year">2024</span>
+              <span class="proj-arrow">↗</span>
+            </div>
           </div>
-          <div class="project-arrow">↗</div>
         </a>
- 
+
+        <!-- Card 4 -->
+        <a class="proj-card" href="#">
+          <div class="proj-thumb">
+            <div class="proj-thumb-placeholder pt-4"></div>
+          </div>
+          <div class="proj-body">
+            <span class="proj-tag">Motion</span>
+            <p class="proj-name">Project title here</p>
+            <p class="proj-desc">Short description of the project — what it is, who it's for, and what makes it interesting.</p>
+            <div class="proj-footer">
+              <span class="proj-year">2024</span>
+              <span class="proj-arrow">↗</span>
+            </div>
+          </div>
+        </a>
+
       </div>
     </div>
   </div>
@@ -162,7 +191,7 @@
   <!-- FOOTER -->
   <footer>
     <span>© 2026 Catherine Xu</span>
-    <span>designed with oolong (ft. claude ai)</span>
+    <span>designed with oolong and claude</span>
   </footer>
 
   <script src="../javascript/main.js"></script>
