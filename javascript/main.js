@@ -23,7 +23,6 @@ function handleSubmit(e) {
 }
 
 // Custom cursor
-// Custom cursor
 const cursor = document.createElement('div');
 cursor.classList.add('custom-cursor');
 
@@ -51,7 +50,6 @@ document.querySelectorAll('[data-cursor]').forEach(el => {
   });
 });
 
-// Keep existing hovered scale effect for elements without a message
 document.querySelectorAll('a, button').forEach(el => {
   if (!el.hasAttribute('data-cursor')) {
     el.addEventListener('mouseenter', () => cursor.classList.add('hovered'));
