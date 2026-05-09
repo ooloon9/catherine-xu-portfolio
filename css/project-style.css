@@ -96,6 +96,7 @@ a:has(.nav-logo):hover .nav-logo-hover { opacity: 1; }
   overflow: hidden;
   aspect-ratio: 16 / 9;
   border: 1px solid var(--faint);
+  
 }
 
 .video-wrap iframe {
@@ -286,6 +287,7 @@ a:has(.nav-logo):hover .nav-logo-hover { opacity: 1; }
   justify-content: center;
   gap: 16px;
   margin-top: 14px;
+  margin-bottom: 2rem;
 }
  
 .btn {
@@ -330,8 +332,12 @@ a:has(.nav-logo):hover .nav-logo-hover { opacity: 1; }
 
 
 /* ── PROCESS STEPS WITH IMAGES ── */
+.process-step-full-initial{
+  padding-top: 2rem;
+}
+
 .process-step-full {
-  padding: 3rem 0;
+  padding-top: 5rem;
 }
 
 .process-step-full:first-child { border-top: 1px solid var(--faint); }
@@ -341,7 +347,7 @@ a:has(.nav-logo):hover .nav-logo-hover { opacity: 1; }
   grid-template-columns: 48px 1fr;
   gap: 1.5rem;
   align-items: start;
-  margin-bottom: 1rem;
+  /* margin-bottom: 1rem; */
 }
 
 .step-num {
@@ -358,6 +364,7 @@ a:has(.nav-logo):hover .nav-logo-hover { opacity: 1; }
 }
 
 .step-desc {
+  padding-bottom: 1rem;
   font-size: 0.8rem;
   color: var(--muted);
   line-height: 1.7;
