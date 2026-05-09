@@ -237,7 +237,7 @@ a:has(.nav-logo):hover .nav-logo-hover { opacity: 1; }
 /* WORKS - THUMBNAILS */
 .proj-thumb {
   width: 100%;
-  height: 210px;
+  height: 300px;
   overflow: hidden;
 }
 
