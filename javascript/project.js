@@ -44,3 +44,24 @@ document.querySelectorAll('a, button').forEach(el => {
     el.addEventListener('mouseleave', () => cursor.classList.remove('hovered'));
   }
 });
+
+// Persona carousel
+document.querySelectorAll('.carousel').forEach(carousel => {
+  const slides = carousel.querySelectorAll('.slide');
+  const dots   = carousel.querySelectorAll('.dot');
+  const prevBtn = carousel.querySelector('.btn[aria-label="Previous"]');
+  const nextBtn = carousel.querySelector('.btn[aria-label="Next"]');
+  let current = 0;
+
+  function goTo(index) {
+    slides[current].classList.remove('active');
+    dots[current]?.classList.remove('active');
+    current = (index + slides.length) % slides.length;
+    slides[current].classList.add('active');
+    dots[current]?.classList.add('active');
+  }
+
+  nextBtn?.addEventListener('click', () => goTo(current + 1));
+  prevBtn?.addEventListener('click', () => goTo(current - 1));
+  dots.forEach(dot => dot.addEventListener('click', () => goTo(+dot.dataset.index)));
+});
