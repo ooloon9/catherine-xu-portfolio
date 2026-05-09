@@ -16,6 +16,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
   
   <link rel="stylesheet" href="../css/project-style.css">
+  <link rel="stylesheet" href="../css/font-exploration.css">
 </head>
 <body>
 
@@ -33,18 +34,18 @@
   <div class="project-hero reveal">
     <span class="project-eyebrow">Advertising · 2026</span>
     <h1>Huishang Bank 20th Anniversary Campaign</h1>
-    <p class="project-hero-desc">A celebratory campaign marking two decades of Huishang Bank — blending heritage, institutional trust, and forward momentum into a unified visual system across print, digital, and environmental media.</p>
+    <p class="project-hero-desc">Celebrating their 20th anniverary, Huishang Bank celebrates their 20th anniversary with the citizens of Hefei! In the span of 2 weeks, I was tasked with creating key visuals for the brand's celebration campaign, utilizing the brand's exisiting brand to create fun visuals.</p>
     <div class="project-meta">
-      <div class="meta-item"><p class="meta-label">Role</p><p class="meta-value">Campaign Designer</p></div>
-      <div class="meta-item"><p class="meta-label">Timeline</p><p class="meta-value">8 Weeks</p></div>
-      <div class="meta-item"><p class="meta-label">Tools</p><p class="meta-value">Adobe Illustrator, Figma, Photoshop</p></div>
+      <div class="meta-item"><p class="meta-label">My Role</p><p class="meta-value">Campaign Designer</p></div>
+      <div class="meta-item"><p class="meta-label">Timeline</p><p class="meta-value">2 Weeks</p></div>
+      <div class="meta-item"><p class="meta-label">Tools</p><p class="meta-value">Adobe Illustrator, Figma, Photoshop, Procreate</p></div>
       <div class="meta-item"><p class="meta-label">Year</p><p class="meta-value">2026</p></div>
     </div>
   </div>
 
   <div class="project-cover reveal">
     <div class="cover-img-wrap" style="background: #f0eeff;">
-      <img src="../images/p1-cover.jpg" alt="Huishang Bank Campaign cover" class="cover-img" />
+      <img src="../images/project-1/real-life-1.png" alt="Huishang Bank Campaign cover" class="cover-img" data-cursor="sticker booklet + stickers i designed"/>
     </div>
   </div>
 
@@ -52,25 +53,26 @@
 
     <div class="content-section reveal">
       <p class="content-label">Overview</p>
-      <h2>Twenty years of trust, distilled into a campaign.</h2>
-      <p>Huishang Bank approached this milestone wanting more than a commemorative logo. They needed a full campaign that could speak to both longtime clients and a younger generation of banking customers — honouring the institution's roots while signalling its ambitions for the next twenty years.</p>
-      <p>The campaign centred on the idea of "growing together" — using visual metaphors of layered growth, warm gold tones drawn from the bank's brand equity, and a typographic system that balanced gravitas with approachability.</p>
+      <h2>Fortune and good luck far and wide</h2>
+      <p>Huishang Bank approached this milestone wanting more than a commemorative logo. They needed a full campaign that could speak to both longtime clients and a younger generation of banking customers.</p>
+      <p>Chinese New Years was drawing near, and the company wanted to join in on the festivites by having a New Year's fortune themed campaign in the city's busiest subway stations.</p>
     </div>
 
     <div class="content-section reveal">
       <p class="content-label">Process</p>
       <h2>From brief to launch.</h2>
 
-      <div class="process-step-full">
+      <div class="process-step-full-initial">
         <div class="process-step-header">
           <span class="step-num">01</span>
           <div>
             <p class="step-title">Research & Brand Immersion</p>
-            <p class="step-desc">Reviewed Huishang Bank's 20-year visual history, existing brand guidelines, and competitor anniversary campaigns. Identified an opportunity to differentiate through warmth and human storytelling rather than purely institutional imagery.</p>
+            <p>Huishang Bank's 20th Anniversary key visual is formal but festive. The main colors used were red and gold, two colors that symbolize Chinese fortune. However, for this campaign, they wanted something that could appeal to the youth.</p>
+            <p class="step-desc">And so, it was my job to create a new key visual that had elements from the original 20th anniversary </p>
           </div>
         </div>
-        <div class="step-img-wrap" style="background: #f0eeff;">
-          <img src="../images/p1-step1.jpg" alt="Research and brand immersion" class="step-img" />
+        <div class="step-img-wrap">
+          <img src="../images/project-1/huihang-20th-anni.jpg" alt="Research and brand immersion" class="step-img" data-cursor="offical 20th anniversary KV"/>
         </div>
       </div>
 
@@ -82,8 +84,36 @@
             <p class="step-desc">Developed three campaign directions — one rooted in archival photography, one in abstract growth patterns, and one in illustrated portraiture. The client selected the growth pattern direction, which I then expanded into a full system.</p>
           </div>
         </div>
-        <div class="step-img-wrap" style="background: #f0eeff;">
-          <img src="../images/p1-step2.jpg" alt="Concept development sketches" class="step-img" />
+
+         <!-- USER JOURNEY CAROUSEL -->
+        <div class="carousel" id="carousel-journeys">
+          <div class="carousel-track">
+            <div class="slide active">
+              <div class="step-img-wrap">
+                <img src="../images/project-1/draft-1.png" alt="User Journey 1" class="step-img" data-cursor="initial concept and layout"/>
+              </div>
+            </div>
+            <div class="slide">
+              <div class="step-img-wrap">
+                <img src="../images/project-1/draft-2.png" alt="User Journey 2" class="step-img" data-cursor="second draft"/>
+              </div>
+            </div>
+            <div class="slide">
+              <div class="step-img-wrap">
+                <img src="../images/project-1/draft-3.png" alt="User Journey 2" class="step-img" data-cursor="third draft"/>
+              </div>
+            </div>
+          </div>
+ 
+          <div class="controls">
+            <button class="btn" id="previous-journey" aria-label="Previous">←</button>
+            <div class="dots">
+              <span class="dot active" data-index="0"></span>
+              <span class="dot" data-index="1"></span>
+              <span class="dot" data-index="2"></span>
+            </div>
+            <button class="btn" id="next-journey" aria-label="Next">→</button>
+          </div>
         </div>
       </div>
 
@@ -95,8 +125,42 @@
             <p class="step-desc">Built out a modular visual language using layered concentric forms representing 20 years of milestones. Designed key art, typography hierarchy, and a colour palette extending from the bank's existing gold and navy.</p>
           </div>
         </div>
-        <div class="step-img-wrap" style="background: #f0eeff;">
-          <img src="../images/p1-step3.jpg" alt="Visual system design" class="step-img" />
+        <!-- <div class="step-img-wrap" style="aspect-ratio: auto; height: auto;">
+          <img src="../images/project-1/font-exploration.png" alt="Visual system design" class="step-img" style="object-fit: contain; height: auto;"/>
+        </div> -->
+
+        <div class="font-exploration">
+            <div class="font-item">
+              <img src="../images/project-1/font-exploration-1.png" alt="Maoken Assorted Sans base" data-cursor="initial font chosen"/>
+            </div>
+        
+            <div class="arrow">
+              <img src="../images/project-1/font-exploration-arrow.png" alt="→" />
+            </div>
+        
+            <div class="font-item">
+              <img src="../images/project-1/font-exploration-2.png" alt="徽享财富节 plain" data-cursor="plain font"/>
+            </div>
+        
+            <div class="arrow">
+              <img src="../images/project-1/font-exploration-arrow.png" alt="→" />
+            </div>
+        
+            <div class="font-item">
+              <img src="../images/project-1/font-exploration-3.png" alt="徽享财富节 coloured" data-cursor="coloured font"/>
+            </div>
+        
+            <div class="arrow">
+              <img src="../images/project-1/font-exploration-arrow.png" alt="→" />
+            </div>
+        
+            <div class="font-item">
+              <img src="../images/project-1/font-exploration-4.png" alt="徽享财富节 final" data-cursor="final look"/>
+            </div>
+        </div>
+
+        <div class="step-img-wrap">
+          <img src="../images/project-1/KV.png" alt="Research and brand immersion" class="step-img" data-cursor="final KV"/>
         </div>
       </div>
 
