@@ -6,7 +6,7 @@
   <title>Huishang Bank 20th Anniversary — Catherine Xu</title>
 
   <link rel="icon" type="image/png" href="../images/favicon.png">
-  
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
@@ -16,7 +16,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
   
   <link rel="stylesheet" href="../css/project-style.css">
-  <link rel="stylesheet" href="../css/font-exploration.css">
+  <link rel="stylesheet" href="../css/interactions.css">
 </head>
 <body>
 
@@ -38,7 +38,7 @@
     <div class="project-meta">
       <div class="meta-item"><p class="meta-label">My Role</p><p class="meta-value">Campaign Designer</p></div>
       <div class="meta-item"><p class="meta-label">Timeline</p><p class="meta-value">2 Weeks</p></div>
-      <div class="meta-item"><p class="meta-label">Tools</p><p class="meta-value">Adobe Illustrator, Figma, Photoshop, Procreate</p></div>
+      <div class="meta-item"><p class="meta-label">Tools</p><p class="meta-value">Adobe Illustrator, Photoshop, Figma, Procreate</p></div>
       <div class="meta-item"><p class="meta-label">Year</p><p class="meta-value">2026</p></div>
     </div>
   </div>
@@ -71,9 +71,31 @@
             <p class="step-desc">And so, it was my job to create a new key visual that had elements from the original 20th anniversary </p>
           </div>
         </div>
-        <div class="step-img-wrap">
-          <img src="../images/project-1/huihang-20th-anni.jpg" alt="Research and brand immersion" class="step-img" data-cursor="offical 20th anniversary KV"/>
+         <!-- RESEARCH CAROUSEL -->
+        <div class="carousel" id="carousel-concepts">
+          <div class="carousel-track">
+            <div class="slide active">
+              <div class="step-img-wrap">
+                <img src="../images/project-1/huihang-20th-anni.jpg" alt="Research and brand immersion" class="step-img" data-cursor="offical 20th anniversary KV"/>
+              </div>
+            </div>
+            <div class="slide">
+              <div class="step-img-wrap">
+                <img src="../images/project-1/official-character.png" alt="Research and brand immersion" class="step-img" data-cursor="official mascot"/>
+              </div>
+            </div>
+          </div>
+ 
+          <div class="controls">
+            <button class="btn" id="previous-concept" aria-label="Previous">←</button>
+            <div class="dots">
+              <span class="dot active" data-index="0"></span>
+              <span class="dot" data-index="1"></span>
+            </div>
+            <button class="btn" id="next-concept" aria-label="Next">→</button>
+          </div>
         </div>
+
       </div>
 
       <div class="process-step-full">
@@ -85,8 +107,8 @@
           </div>
         </div>
 
-         <!-- USER JOURNEY CAROUSEL -->
-        <div class="carousel" id="carousel-journeys">
+         <!-- CONCEPTS CAROUSEL -->
+        <div class="carousel" id="carousel-concepts">
           <div class="carousel-track">
             <div class="slide active">
               <div class="step-img-wrap">
@@ -106,15 +128,16 @@
           </div>
  
           <div class="controls">
-            <button class="btn" id="previous-journey" aria-label="Previous">←</button>
+            <button class="btn" id="previous-concept" aria-label="Previous">←</button>
             <div class="dots">
               <span class="dot active" data-index="0"></span>
               <span class="dot" data-index="1"></span>
               <span class="dot" data-index="2"></span>
             </div>
-            <button class="btn" id="next-journey" aria-label="Next">→</button>
+            <button class="btn" id="next-concept" aria-label="Next">→</button>
           </div>
         </div>
+
       </div>
 
       <div class="process-step-full">
@@ -125,9 +148,6 @@
             <p class="step-desc">Built out a modular visual language using layered concentric forms representing 20 years of milestones. Designed key art, typography hierarchy, and a colour palette extending from the bank's existing gold and navy.</p>
           </div>
         </div>
-        <!-- <div class="step-img-wrap" style="aspect-ratio: auto; height: auto;">
-          <img src="../images/project-1/font-exploration.png" alt="Visual system design" class="step-img" style="object-fit: contain; height: auto;"/>
-        </div> -->
 
         <div class="font-exploration">
             <div class="font-item">
@@ -172,8 +192,25 @@
             <p class="step-desc">Adapted the system across print collateral, social media templates, branch environmental graphics, and a commemorative booklet. Delivered production-ready files with an adaptation guide for the internal team.</p>
           </div>
         </div>
-        <div class="step-img-wrap" style="background: #f0eeff;">
-          <img src="../images/p1-step4.jpg" alt="Campaign rollout" class="step-img" />
+        <div class="final-img-grid">
+          <div class="final-img-wrap">
+            <img src="../images/project-1/stamp-booklet-preview.png" alt="Final campaign asset 1" class="final-img" data-cursor="stamp booklet"/>
+          </div>
+          <div class="final-img-wrap">
+            <img src="../images/project-1/huh.png" alt="Final campaign asset 2" class="final-img" data-cursor="campaign kiosk"/>
+          </div>
+          <!-- PHONE ASSET SHOWCASE -->
+          <div class="phones">
+            <div class="phone">
+              <img src="../images/project-1/countdown-phone-1.png" alt="3 days countdown" data-cursor="social media countdown graphic"/>
+            </div>
+            <div class="phone">
+              <img src="../images/project-1/countdown-phone-2.png" alt="2 days countdown" data-cursor="social media countdown graphic"/>
+            </div>
+            <div class="phone">
+              <img src="../images/project-1/countdown-phone-3.png" alt="1 day countdown" data-cursor="social media countdown graphic"/>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -182,17 +219,31 @@
       <p class="content-label">Final Product</p>
       <h2>The campaign, in full.</h2>
       <p>The final system deployed across all touchpoints — branch environmental graphics, commemorative print collateral, and digital channels — unified by a single visual language built to last beyond the anniversary period.</p>
-      <div class="final-img-grid">
-        <div class="final-img-wrap" style="background: #f0eeff;">
-          <img src="../images/p1-final1.jpg" alt="Final campaign asset 1" class="final-img" />
+
+               <!-- RESEARCH CAROUSEL -->
+        <div class="carousel" id="carousel-concepts">
+          <div class="carousel-track">
+            <div class="slide active">
+              <div class="step-img-wrap">
+                <img src="../images/project-1/real-life-2.png" alt="Research and brand immersion" class="step-img" data-cursor="offical 20th anniversary KV"/>
+              </div>
+            </div>
+            <div class="slide">
+              <div class="step-img-wrap">
+                <img src="../images/project-1/real-life-3.png" alt="Research and brand immersion" class="step-img" data-cursor="official mascot"/>
+              </div>
+            </div>
+          </div>
+ 
+          <div class="controls">
+            <button class="btn" id="previous-concept" aria-label="Previous">←</button>
+            <div class="dots">
+              <span class="dot active" data-index="0"></span>
+              <span class="dot" data-index="1"></span>
+            </div>
+            <button class="btn" id="next-concept" aria-label="Next">→</button>
+          </div>
         </div>
-        <div class="final-img-wrap" style="background: #f0eeff;">
-          <img src="../images/p1-final2.jpg" alt="Final campaign asset 2" class="final-img" />
-        </div>
-        <div class="final-img-wrap final-img-wide" style="background: #f0eeff;">
-          <img src="../images/p1-final3.jpg" alt="Final campaign asset 3" class="final-img" />
-        </div>
-      </div>
     </div>
 
     <div class="content-section reveal">
