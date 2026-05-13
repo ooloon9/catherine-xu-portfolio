@@ -7,7 +7,8 @@
   --muted: #6b6b66;
   --faint: #dddddd;
   --accent: #de5264;
-  --serif: 'DM Serif Display', Georgia, serif;
+  --serif: 'Gametta-BoldItalic', serif;
+  --heading: 'Zalando Sans', sans-serif;
   --sans: 'Inter', sans-serif;
   --mono: 'JetBrains Mono', sans-serif;
 }
@@ -128,8 +129,8 @@ a:has(.nav-logo):hover .nav-logo-hover { opacity: 1; }
 }
 
 .hero h1 em {
-  font-family: var(--serif);
-  font-style: italic;
+  font-family: var(--heading);
+  font-style: normal;
   color: var(--accent);
 }
 
@@ -532,3 +533,5 @@ footer {
   opacity: 1;
   max-width: 200px;
 }
+
+
