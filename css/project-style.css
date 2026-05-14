@@ -7,7 +7,6 @@
   --muted: #6b6b66;
   --faint: #dddddd;
   --accent: #de5264;
-  --serif: 'Gametta-BoldItalic', serif;
   --sans: 'Inter', sans-serif;
   --mono: 'JetBrains Mono', sans-serif;
 }
@@ -351,7 +350,7 @@ a:has(.nav-logo):hover .nav-logo-hover { opacity: 1; }
 }
 
 .step-num {
-  font-family: var(--serif);
+  font-family: var(--mono);
   font-size: 3rem;
   color: var(--faint);
   line-height: 1;
@@ -427,7 +426,7 @@ a:has(.nav-logo):hover .nav-logo-hover { opacity: 1; }
 }
 
 .outcome-num {
-  font-family: var(--serif);
+  font-family: var(--sans);
   font-size: 2rem;
   font-weight: 400;
   margin-bottom: 0.25rem;
