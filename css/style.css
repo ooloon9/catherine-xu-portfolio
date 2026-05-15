@@ -360,8 +360,8 @@ a:has(.nav-logo):hover .nav-logo-hover { opacity: 1; }
 /* CONTACT */
 .contact-grid {
   display: grid;
-  grid-template-columns: 1fr 1.2fr;
-  gap: 6rem;
+  grid-template-columns: 1fr;
+  gap: 2rem;
   align-items: start;
 }
 
