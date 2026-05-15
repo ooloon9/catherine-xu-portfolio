@@ -373,7 +373,8 @@ a:has(.nav-logo):hover .nav-logo-hover { opacity: 1; }
 }
 
 .contact-links {
-  display: row;
+  display: flex;
+  flex-direction: row; 
   flex-wrap: wrap;
   gap: 2rem;
 }
