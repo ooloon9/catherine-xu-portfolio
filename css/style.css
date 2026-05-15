@@ -359,10 +359,9 @@ a:has(.nav-logo):hover .nav-logo-hover { opacity: 1; }
 
 /* CONTACT */
 .contact-grid {
-  display: grid;
+  display: grid; 
   grid-template-columns: 1fr;
   gap: 2rem;
- 
 }
 
 .contact-intro p {
@@ -376,18 +375,13 @@ a:has(.nav-logo):hover .nav-logo-hover { opacity: 1; }
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  align-items: center;
   gap: 2rem;
 }
 
 .contact-link {
-  font-size: 0.875rem;
-  color: var(--muted);
-  text-decoration: none;
-  display: inline-flex;   /* ← change from flex to inline-flex */
+  display: inline-flex;
   align-items: center;
   gap: 8px;
-  transition: color 0.2s;
 }
 
 .contact-link:hover { color: var(--accent); }
