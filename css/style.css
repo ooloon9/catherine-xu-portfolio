@@ -374,8 +374,9 @@ a:has(.nav-logo):hover .nav-logo-hover { opacity: 1; }
 
 .contact-links {
   display: flex;
-  flex-direction: row; 
+  flex-direction: row;
   flex-wrap: wrap;
+  align-items: center;
   gap: 2rem;
 }
 
@@ -383,7 +384,7 @@ a:has(.nav-logo):hover .nav-logo-hover { opacity: 1; }
   font-size: 0.875rem;
   color: var(--muted);
   text-decoration: none;
-  display: flex;
+  display: inline-flex;   /* ← change from flex to inline-flex */
   align-items: center;
   gap: 8px;
   transition: color 0.2s;
