@@ -1,124 +1,23 @@
-:root {
-  --color-text-tertiary: #6b7280;
-}
-
-* {
+*{
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
 body {
-  margin: 0;
-  background: #0f0f0f;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.canvas-wrap {
-  position: fixed;
-  inset: 0;
-  overflow: hidden;
+  font-family: "JetBrains Mono", monospace;
+  background-color: black;
   cursor: grab;
   user-select: none;
-  touch-action: none;
+  overflow: hidden;
 }
 
-.canvas-wrap.is-dragging {
+body.dragging {
   cursor: grabbing;
 }
 
-.grid-container {
-  position: absolute;
-  left: 0;
-  top: 0;
-  will-change: transform;
-}
-
-.hint {
-  position: absolute;
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 11px;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.3);
-  pointer-events: none;
-  transition: opacity 0.6s ease;
-}
-
-.project-card {
-  position: absolute;
-  width: 160px;
-  height: auto;
-  overflow: hidden;
-  cursor: pointer;
-  transition: transform 0.25s ease, opacity 0.25s ease;
-}
-
-.project-image {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-.project-card:hover {
-  transform: scale(1.04);
-  opacity: 0.9;
-}
-
-.canvas-wrap.is-dragging .project-card {
-  transition: none;
-}
-
-.canvas-wrap.is-dragging .project-card:hover {
-  transform: scale(1);
-  opacity: 1;
-}
-
-/* ── Center text overlay ────────────────────────────────────────────────────
-   Positioned by JS via transform: translate(textX, textY).
-   margin offsets of -50% width/height center the box on that coordinate. */
-.center-grid-text {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 160px;
-  height: 220px;
-  margin-left: -80px;   /* -CARD_W/2 */
-  margin-top: -110px;   /* -CARD_H/2 */
-
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-
-  pointer-events: none;
-  will-change: transform;
-}
-
-.center-grid-text .label {
-  font-size: 10px;
-  font-weight: 400;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.35);
-  margin-bottom: 10px;
-}
-
-.center-grid-text .title {
-  font-size: 28px;
-  font-weight: 300;
-  line-height: 1.1;
-  letter-spacing: -0.02em;
-  color: rgba(255, 255, 255, 0.85);
-  font-family: Georgia, serif;
-  font-style: italic;
-  margin-bottom: 8px;
-}
-
-.center-grid-text .sub {
-  font-size: 11px;
-  font-weight: 400;
-  letter-spacing: 0.05em;
-  color: rgba(255, 255, 255, 0.3);
-  font-style: italic;
+#gallery {
+  position: relative;
+  width: 100vw;
+  height: 100svh;
 }
